@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Heading from "@components/Heading.astro";
+import Text from "@components/Text.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,19 +13,38 @@ import Heading from "@components/Heading.astro";
       </Heading>
       <Heading level={2} class="mt-6" big> Firstname Lastname. </Heading>
       <Heading level={3} class="mt-6" big> I build for the web. </Heading>
-      <p class="max-w-[50ch] mt-6 text-prose sm:text-xl">
+      <Text class="max-w-[50ch] mt-6">
         I'm a front-end engineer building exceptional user interfaces for the
         web with an eye on details.
-      </p>
+      </Text>
+      <!-- <p class="max-w-[50ch] mt-6 text-prose sm:text-xl">
+        I'm a front-end engineer building exceptional user interfaces for the
+        web with an eye on details.
+      </p> -->
     </section>
     <section class="min-h-screen pt-4" id="about">
       <h2 class="font-bold">About</h2>
+      <Text
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
+        nobis saepe ducimus minima neque quos accusamus consequatur, quo
+        placeat.</Text
+      >
     </section>
     <section class="min-h-screen pt-4" id="projects">
       <h2 class="font-bold">Projects</h2>
+      <Text
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
+        nobis saepe ducimus minima neque quos accusamus consequatur, quo
+        placeat.</Text
+      >
     </section>
     <section class="min-h-screen pt-4" id="contact">
       <h2 class="font-bold">Contact</h2>
+      <Text
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
+        nobis saepe ducimus minima neque quos accusamus consequatur, quo
+        placeat.</Text
+      >
     </section>
   </main>
   <footer class="min-h-[50px]">
