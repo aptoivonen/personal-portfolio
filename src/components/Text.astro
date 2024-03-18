@@ -1,0 +1,15 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "../utils";
+
+interface Props extends HTMLAttributes<"p"> {}
+
+const { ...attrs } = Astro.props;
+const { class: classNames, ...restAttrs } = attrs;
+const finalAttrs = {
+  class: cn("text-prose sm:text-xl", classNames),
+  ...restAttrs,
+};
+---
+
+<p {...finalAttrs}><slot /></p>
