@@ -18,7 +18,9 @@
     "@fontsource-variable/roboto-mono": "^5.0.18",
     "@studio-freight/lenis": "^1.0.39",
     "astro": "^4.5.3",
+    "clsx": "^2.1.0",
     "husky": "^9.0.11",
+    "tailwind-merge": "^2.2.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
   }
