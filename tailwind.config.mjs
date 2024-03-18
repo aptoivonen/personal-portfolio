@@ -13,7 +13,8 @@ export default {
       transparent: "transparent",
       current: "currentColor",
       primary: "#1e384c",
-      secondary: "#e4e4e4",
+      secondary: "hsl(0, 0%, 89%)", // #e4e4e4
+      "secondary-tinted": "hsl(0, 0%, 74%)",
       tertiary: "#ffa500",
     },
   },
