@@ -17,19 +17,24 @@ import TagStyle from "@components/TagStyle.astro";
         aria-labelledby="hero-heading"
       >
         <div>
-        <Heading class="text-tertiary" level={1} size="normal">
-          Hi, my name is
-        </Heading>
-        <Heading class="mt-6" level={2} size="big" id="hero-heading">
-          Firstname Lastname.
-        </Heading>
-        <Heading class="mt-6" level={3} size="big">
-          I build for the web.
-        </Heading>
-        <Text class="max-w-[50ch] mt-6">
-          I'm a front-end engineer building exceptional user interfaces for the
-          web with an eye on details.
-        </Text>
+          <Heading class="text-tertiary" level={1} size="normal">
+            Hi, my name is
+          </Heading>
+          <Heading class="mt-6" level={2} size="big" id="hero-heading">
+            Firstname Lastname.
+          </Heading>
+          <Heading class="mt-6" level={3} size="big">
+            I build for the web.
+          </Heading>
+          <Text class="max-w-[50ch] mt-6">
+            I'm a front-end engineer building exceptional user interfaces for
+            the web with an eye on details.
+          </Text>
+          <button
+            class="whitespace-nowrap max-w-min py-6 px-16 bg-tertiary text-primary text-xl mt-12 rounded-full hover:ring hover:ring-secondary"
+            >Get In Touch</button
+          >
+        </div>
       </Section>
       <Section id="about" aria-labelledby="about-heading">
         <Heading level={2} size="big" id="about-heading"
