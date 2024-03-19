@@ -4,15 +4,22 @@ import { cn } from "../utils";
 
 interface Props extends HTMLAttributes<"h1" | "h2" | "h3"> {
   level: 1 | 2 | 3;
-  big?: boolean;
+  size: "normal" | "big";
 }
 
-const { level, big, ...attrs } = Astro.props;
-const { class: classNames, ...restAttrs } = attrs;
+const normalClass = "text-base";
 const bigClass =
   "text-3xl sm:text-6xl lg:text-7xl [word-spacing:-0.1rem] tracking-tight";
+
+const { level, size, ...attrs } = Astro.props;
+const { class: classNames, ...restAttrs } = attrs;
+
 const finalAttrs = {
-  class: cn("font-bold text-secondary", { [bigClass]: big }, classNames),
+  class: cn(
+    "font-bold text-secondary",
+    { [normalClass]: size === "normal", [bigClass]: size === "big" },
+    classNames
+  ),
   ...restAttrs,
 };
 ---
