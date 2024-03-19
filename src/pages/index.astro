@@ -10,8 +10,13 @@ import TagStyle from "@components/TagStyle.astro";
 <Layout title="Firstname Lastname">
   <header class="fixed right-0 left-0 h-[70px] bg-tertiary"></header>
   <Container>
-    <main class="pt-[70px]">
-      <Section id="hero" aria-labelledby="hero-heading">
+    <main>
+      <Section
+        class="flex items-center -pt-4"
+        id="hero"
+        aria-labelledby="hero-heading"
+      >
+        <div>
         <Heading class="text-tertiary" level={1} size="normal">
           Hi, my name is
         </Heading>
