@@ -8,18 +8,20 @@ import Text from "@components/Text.astro";
   <header class="fixed right-0 left-0 h-[70px] bg-tertiary"></header>
   <main class="pt-[70px]">
     <section class="min-h-screen pt-4" id="hero">
-      <Heading class="text-tertiary text-base" level={1}>
+      <Heading class="text-tertiary" level={1} size="normal">
         Hi, my name is
       </Heading>
-      <Heading level={2} class="mt-6" big> Firstname Lastname. </Heading>
-      <Heading level={3} class="mt-6" big> I build for the web. </Heading>
+      <Heading class="mt-6" level={2} size="big"> Firstname Lastname. </Heading>
+      <Heading class="mt-6" level={3} size="big">
+        I build for the web.
+      </Heading>
       <Text class="max-w-[50ch] mt-6">
         I'm a front-end engineer building exceptional user interfaces for the
         web with an eye on details.
       </Text>
     </section>
     <section class="min-h-screen pt-4" id="about">
-      <h2 class="font-bold">About</h2>
+      <Heading level={2} size="big">About</Heading>
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
@@ -27,7 +29,7 @@ import Text from "@components/Text.astro";
       >
     </section>
     <section class="min-h-screen pt-4" id="projects">
-      <h2 class="font-bold">Projects</h2>
+      <Heading level={2} size="big">Projects</Heading>
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
@@ -35,7 +37,7 @@ import Text from "@components/Text.astro";
       >
     </section>
     <section class="min-h-screen pt-4" id="contact">
-      <h2 class="font-bold">Contact</h2>
+      <Heading level={2} size="big">Contact</Heading>
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
