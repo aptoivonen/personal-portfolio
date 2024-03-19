@@ -1,5 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
 import Heading from "@components/Heading.astro";
 import Section from "@components/Section.astro";
 import Text from "@components/Text.astro";
@@ -8,54 +9,56 @@ import TagStyle from "@components/TagStyle.astro";
 
 <Layout title="Firstname Lastname">
   <header class="fixed right-0 left-0 h-[70px] bg-tertiary"></header>
-  <main class="pt-[70px]">
-    <Section id="hero" aria-labelledby="hero-heading">
-      <Heading class="text-tertiary" level={1} size="normal">
-        Hi, my name is
-      </Heading>
-      <Heading class="mt-6" level={2} size="big" id="hero-heading">
-        Firstname Lastname.
-      </Heading>
-      <Heading class="mt-6" level={3} size="big">
-        I build for the web.
-      </Heading>
-      <Text class="max-w-[50ch] mt-6">
-        I'm a front-end engineer building exceptional user interfaces for the
-        web with an eye on details.
-      </Text>
-    </Section>
-    <Section id="about" aria-labelledby="about-heading">
-      <Heading level={2} size="big" id="about-heading"
-        ><TagStyle>About</TagStyle></Heading
-      >
-      <Text
-        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
-        nobis saepe ducimus minima neque quos accusamus consequatur, quo
-        placeat.</Text
-      >
-    </Section>
-    <Section id="projects" aria-labelledby="projects-heading">
-      <Heading level={2} size="big" id="projects-heading"
-        ><TagStyle>Projects</TagStyle></Heading
-      >
-      <Text
-        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
-        nobis saepe ducimus minima neque quos accusamus consequatur, quo
-        placeat.</Text
-      >
-    </Section>
-    <Section id="contact" aria-labelledby="contact-heading">
-      <Heading level={2} size="big" id="contact-heading"
-        ><TagStyle>Contact</TagStyle></Heading
-      >
-      <Text
-        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
-        nobis saepe ducimus minima neque quos accusamus consequatur, quo
-        placeat.</Text
-      >
-    </Section>
-  </main>
-  <footer class="min-h-[50px]">
-    <small> Made with 🤍 in 2024 </small>
-  </footer>
+  <Container>
+    <main class="pt-[70px]">
+      <Section id="hero" aria-labelledby="hero-heading">
+        <Heading class="text-tertiary" level={1} size="normal">
+          Hi, my name is
+        </Heading>
+        <Heading class="mt-6" level={2} size="big" id="hero-heading">
+          Firstname Lastname.
+        </Heading>
+        <Heading class="mt-6" level={3} size="big">
+          I build for the web.
+        </Heading>
+        <Text class="max-w-[50ch] mt-6">
+          I'm a front-end engineer building exceptional user interfaces for the
+          web with an eye on details.
+        </Text>
+      </Section>
+      <Section id="about" aria-labelledby="about-heading">
+        <Heading level={2} size="big" id="about-heading"
+          ><TagStyle>About</TagStyle></Heading
+        >
+        <Text
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
+          nobis saepe ducimus minima neque quos accusamus consequatur, quo
+          placeat.</Text
+        >
+      </Section>
+      <Section id="projects" aria-labelledby="projects-heading">
+        <Heading level={2} size="big" id="projects-heading"
+          ><TagStyle>Projects</TagStyle></Heading
+        >
+        <Text
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
+          nobis saepe ducimus minima neque quos accusamus consequatur, quo
+          placeat.</Text
+        >
+      </Section>
+      <Section id="contact" aria-labelledby="contact-heading">
+        <Heading level={2} size="big" id="contact-heading"
+          ><TagStyle>Contact</TagStyle></Heading
+        >
+        <Text
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
+          nobis saepe ducimus minima neque quos accusamus consequatur, quo
+          placeat.</Text
+        >
+      </Section>
+    </main>
+    <footer class="min-h-[50px]">
+      <small> Made with 🤍 in 2024 </small>
+    </footer>
+  </Container>
 </Layout>
