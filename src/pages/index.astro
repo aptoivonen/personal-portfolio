@@ -1,13 +1,15 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Heading from "@components/Heading.astro";
+import Section from "@components/Section.astro";
 import Text from "@components/Text.astro";
+import TagStyle from "@components/TagStyle.astro";
 ---
 
 <Layout title="Firstname Lastname">
   <header class="fixed right-0 left-0 h-[70px] bg-tertiary"></header>
   <main class="pt-[70px]">
-    <section class="min-h-screen pt-4" id="hero">
+    <Section id="hero">
       <Heading class="text-tertiary" level={1} size="normal">
         Hi, my name is
       </Heading>
@@ -19,31 +21,31 @@ import Text from "@components/Text.astro";
         I'm a front-end engineer building exceptional user interfaces for the
         web with an eye on details.
       </Text>
-    </section>
-    <section class="min-h-screen pt-4" id="about">
-      <Heading level={2} size="big">About</Heading>
+    </Section>
+    <Section id="about">
+      <Heading level={2} size="big"><TagStyle>About</TagStyle></Heading>
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
         placeat.</Text
       >
-    </section>
-    <section class="min-h-screen pt-4" id="projects">
-      <Heading level={2} size="big">Projects</Heading>
+    </Section>
+    <Section id="projects">
+      <Heading level={2} size="big"><TagStyle>Projects</TagStyle></Heading>
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
         placeat.</Text
       >
-    </section>
-    <section class="min-h-screen pt-4" id="contact">
-      <Heading level={2} size="big">Contact</Heading>
+    </Section>
+    <Section id="contact">
+      <Heading level={2} size="big"><TagStyle>Contact</TagStyle></Heading>
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
         placeat.</Text
       >
-    </section>
+    </Section>
   </main>
   <footer class="min-h-[50px]">
     <small> Made with 🤍 in 2024 </small>
