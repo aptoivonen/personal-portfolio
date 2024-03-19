@@ -9,11 +9,13 @@ import TagStyle from "@components/TagStyle.astro";
 <Layout title="Firstname Lastname">
   <header class="fixed right-0 left-0 h-[70px] bg-tertiary"></header>
   <main class="pt-[70px]">
-    <Section id="hero">
+    <Section id="hero" aria-labelledby="hero-heading">
       <Heading class="text-tertiary" level={1} size="normal">
         Hi, my name is
       </Heading>
-      <Heading class="mt-6" level={2} size="big"> Firstname Lastname. </Heading>
+      <Heading class="mt-6" level={2} size="big" id="hero-heading">
+        Firstname Lastname.
+      </Heading>
       <Heading class="mt-6" level={3} size="big">
         I build for the web.
       </Heading>
@@ -22,24 +24,30 @@ import TagStyle from "@components/TagStyle.astro";
         web with an eye on details.
       </Text>
     </Section>
-    <Section id="about">
-      <Heading level={2} size="big"><TagStyle>About</TagStyle></Heading>
+    <Section id="about" aria-labelledby="about-heading">
+      <Heading level={2} size="big" id="about-heading"
+        ><TagStyle>About</TagStyle></Heading
+      >
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
         placeat.</Text
       >
     </Section>
-    <Section id="projects">
-      <Heading level={2} size="big"><TagStyle>Projects</TagStyle></Heading>
+    <Section id="projects" aria-labelledby="projects-heading">
+      <Heading level={2} size="big" id="projects-heading"
+        ><TagStyle>Projects</TagStyle></Heading
+      >
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
         placeat.</Text
       >
     </Section>
-    <Section id="contact">
-      <Heading level={2} size="big"><TagStyle>Contact</TagStyle></Heading>
+    <Section id="contact" aria-labelledby="contact-heading">
+      <Heading level={2} size="big" id="contact-heading"
+        ><TagStyle>Contact</TagStyle></Heading
+      >
       <Text
         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam
         nobis saepe ducimus minima neque quos accusamus consequatur, quo
