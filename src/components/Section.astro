@@ -1,0 +1,18 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "../utils";
+
+interface Props extends HTMLAttributes<"section"> {}
+
+const { ...attrs } = Astro.props;
+const { class: classNames, ...restAttrs } = attrs;
+
+const finalAttrs = {
+  class: cn("min-h-screen pt-4", classNames),
+  ...restAttrs,
+};
+---
+
+<section {...finalAttrs}>
+  <slot />
+</section>
