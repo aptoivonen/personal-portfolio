@@ -1,5 +1,7 @@
 ---
 import "@fontsource-variable/roboto-mono";
+import { primary } from "tailwind.config.mjs";
+
 interface Props {
   title: string;
 }
@@ -15,6 +17,7 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta name="theme-color" content={primary} />
     <meta
       name="description"
       content="Firstname Lastname is a front-end engineer who builds exceptional user interfaces for
