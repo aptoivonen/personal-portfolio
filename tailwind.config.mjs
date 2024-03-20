@@ -9,6 +9,14 @@ export default {
         sans: ["Roboto Mono Variable", ...defaultTheme.fontFamily.sans],
       },
     },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      primary: "#1e384c",
+      secondary: "hsl(0, 0%, 89%)", // #e4e4e4
+      "secondary-tinted": "hsl(0, 0%, 74%)",
+      tertiary: "#ffa500",
+    },
   },
   plugins: [],
 };

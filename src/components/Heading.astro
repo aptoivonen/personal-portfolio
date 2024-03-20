@@ -1,0 +1,47 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "../utils";
+
+interface Props extends HTMLAttributes<"h1" | "h2" | "h3"> {
+  level: 1 | 2 | 3;
+  size: "normal" | "big";
+}
+
+const normalClass = "text-base";
+const bigClass =
+  "text-3xl sm:text-6xl lg:text-7xl [word-spacing:-0.1rem] tracking-tight";
+
+const { level, size, ...attrs } = Astro.props;
+const { class: classNames, ...restAttrs } = attrs;
+
+const finalAttrs = {
+  class: cn(
+    "font-bold text-secondary",
+    { [normalClass]: size === "normal", [bigClass]: size === "big" },
+    classNames
+  ),
+  ...restAttrs,
+};
+---
+
+{
+  level === 1 && (
+    <h1 {...finalAttrs}>
+      <slot />
+    </h1>
+  )
+}
+{
+  level === 2 && (
+    <h2 {...finalAttrs}>
+      <slot />
+    </h2>
+  )
+}
+{
+  level === 3 && (
+    <h3 {...finalAttrs}>
+      <slot />
+    </h3>
+  )
+}
