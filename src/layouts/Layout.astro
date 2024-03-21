@@ -2,6 +2,13 @@
 import "@fontsource-variable/roboto-mono";
 import { primary } from "tailwind.config.mjs";
 
+const author = "Aleksi Toivonen";
+const description =
+  "Aleksi Toivonen is a front-end engineer who builds exceptional user interfaces for the web with an eye on details.";
+const url = "https://aleksitoivonen-portfolio.netlify.app/";
+const ogImgUrl = "";
+const ogImgAlt = "";
+
 type Props = { children: any };
 ---
 
@@ -15,24 +22,33 @@ type Props = { children: any };
     <meta content="ie=edge" http-equiv="x-ua-compatible" />
     <meta name="theme-color" content={primary} />
     <meta name="msapplication-TileColor" content={primary} />
-    <meta
-      name="description"
-      content="Aleksi Toivonen is a front-end engineer who builds exceptional user interfaces for
-    the web with an eye on details."
-    />
+    <meta name="description" content={description} />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <meta name="author" content="Aleksi Toivonen" />
+    <meta name="author" content={author} />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:title" content={author} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={ogImgUrl} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={author} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImgUrl} />
+    <meta name="twitter:image:alt" content={ogImgAlt} />
+
     <meta name="generator" content={Astro.generator} />
-    <title>Aleksi Toivonen</title>
+    <title>{author}</title>
   </head>
   <body class="flex-grow">
     <slot />
